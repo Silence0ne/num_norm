@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "num-norm"
+version = "0.1.0"
+description = "A simple library for converting Persian digits to English digits."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "silence one" }
+]
+keywords = [
+    "persian",
+    "digits",
+    "numbers",
+    "conversion",
+    "normalization"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/num_norm"]
